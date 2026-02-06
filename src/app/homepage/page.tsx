@@ -124,7 +124,7 @@ export default function Homepage() {
               }}
               whileHover={{ y: -10 }}
               transition={{ type: "spring", stiffness: 140 }}
-              className="group relative h-[360px] md:w-[420px] rounded-3xl overflow-hidden shadow-lg cursor-pointer"
+              className="group relative h-[360px] md:w-[720px] rounded-3xl overflow-hidden shadow-lg cursor-pointer"
             >
               {/* Background Image */}
               <div
