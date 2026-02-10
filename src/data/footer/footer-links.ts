@@ -14,13 +14,13 @@ const footerlinks1: IFooterLinks[] = [
   },
   {
     id: 3,
-    name: "Tours & Packages",
-    link: "/packag",
+    name: "Rooms",
+    link: "/rooms",
   },
   {
     id: 4,
-    name: "Explore",
-    link: "/explore",
+    name: "Services",
+    link: "/servic",
   },
 ];
 export default footerlinks1;
@@ -34,8 +34,8 @@ const footerlinks2: IFooterLinks[] = [
 
   {
     id: 6,
-    name: "FAQs",
-    link: "/contactus#faq-section",
+    name: "Careers",
+    link: "/careers",
   },
 
   // {
@@ -60,7 +60,7 @@ const footerlinks3: IFooterLinks[] = [
   {
     id: 10,
     name: "Our Team",
-    link: "/aboutus#our-team",
+    link: "/aboutus#team",
   },
   {
     id: 11,

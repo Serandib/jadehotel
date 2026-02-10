@@ -21,7 +21,12 @@ export default function Footer() {
         <div className="flex lg:flex-row lg:justify-between items-center flex-col">
           <div className="flex flex-col items-center">
             <div className="relative mb-">
-              <Image src="/assets/logo.png" alt="SerandibGo logo" width={180} height={180} />
+              <Image
+                src="/assets/logo.png"
+                alt="SerandibGo logo"
+                width={180}
+                height={180}
+              />
             </div>
             <div className="flex flex-row absolute mt-32 gap-3 hover:cursor-pointer">
               <a
@@ -64,7 +69,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="flex md:flex-row flex-col md:gap-60 gap-5 lg:mt-16 hover:cursor-pointer font-medium ">
+          <div className="flex md:flex-row flex-col md:gap-60 gap-5 lg:mt-16 hover:cursor-pointer font-medium mt-10">
             <div className="flex flex-col md:text-end text-center ">
               {footerlinks1.map((item) => (
                 <div

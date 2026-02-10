@@ -2,6 +2,7 @@
 
 import Container from "@/components/common/container";
 import { motion } from "framer-motion";
+import Script from "next/script";
 
 const packages = [
   {
@@ -18,8 +19,7 @@ const packages = [
     title: "Halls",
     desc: "Perfect for weddings & events",
     image: "/assets/home/035.jpg",
-  }
-  
+  },
 ];
 
 const packages1 = [
@@ -102,7 +102,6 @@ export default function Homepage() {
                 </span>
               </div>
             </motion.div>
-            
           ))}
         </motion.div>
 
@@ -150,10 +149,8 @@ export default function Homepage() {
                 </span>
               </div>
             </motion.div>
-            
           ))}
         </motion.div>
-
 
         {/* booking rooms */}
         {/* Room Booking */}
@@ -366,6 +363,7 @@ export default function Homepage() {
                   image: "/assets/rooms/080.jpg",
                   price: "LKR 18,000",
                   features: ["King Bed", "Balcony View", "Breakfast Included"],
+                  discount: "10%",
                 },
                 {
                   name: "Executive Suite",
@@ -376,6 +374,7 @@ export default function Homepage() {
                     "Premium Amenities",
                     "City View",
                   ],
+                  discount: "10%",
                 },
                 {
                   name: "Family Room",
@@ -386,6 +385,7 @@ export default function Homepage() {
                     "Ideal for Families",
                     "Extra Space",
                   ],
+                  discount: "10%",
                 },
               ].map((room) => (
                 <motion.div
@@ -421,7 +421,7 @@ export default function Homepage() {
                     </ul>
 
                     {/* Price + CTA */}
-                    <div className="mt-8 flex items-center justify-between">
+                    <div className="mt-8 flex items-center justify-between mb-2">
                       <div>
                         <p className="text-sm text-black/50">From</p>
                         <p className="text-2xl font-semibold text-primary">
@@ -437,6 +437,17 @@ export default function Homepage() {
                         View Details
                       </button>
                     </div>
+                    {room.discount && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.4 }}
+                        className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-red-400 px-4 py-1.5 text-xs font-semibold text-white shadow-lg w-fit"
+                      >
+                        {room.discount} OFF
+                        <span className="text-white/80 ">online booking</span>
+                      </motion.div>
+                    )}
                   </div>
                 </motion.div>
               ))}
@@ -450,6 +461,49 @@ export default function Homepage() {
             </div>
           </Container>
         </motion.section>
+
+        <section className="py-20 bg-white">
+          <div className="max-w-6xl mx-auto px-4 text-center">
+            {/* Google Reviews */}
+            <div className="mb-16">
+              <h3 className="text-xl font-semibold mb-6">Google Reviews</h3>
+              <Script
+                src="https://apps.elfsight.com/p/platform.js"
+                strategy="afterInteractive"
+              />
+              <div
+                className="elfsight-app-52b0c6dd-1124-45f1-b4fa-3f505699d265"
+                data-elfsight-app-lazy
+              ></div>{" "}
+            </div>
+
+            {/* Tripadvisor Reviews */}
+            <div>
+              <h3 className="text-xl font-semibold mb-6">
+                Tripadvisor Reviews
+              </h3>
+
+              <script src="https://elfsightcdn.com/platform.js" async></script>
+              <div
+                className="elfsight-app-a8ef8401-454f-4791-af68-c1f18aa65111"
+                data-elfsight-app-lazy
+              ></div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-6">
+                Booking.com Reviews
+              </h3>
+
+              <script src="https://elfsightcdn.com/platform.js" async></script>
+              <script src="https://elfsightcdn.com/platform.js" async></script>
+              <div
+                className="elfsight-app-3adb0a01-e4f6-44a4-b462-00947657a34c"
+                data-elfsight-app-lazy
+              ></div>
+            </div>
+          </div>
+        </section>
       </Container>
     </section>
   );

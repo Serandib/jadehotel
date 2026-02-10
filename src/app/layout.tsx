@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
+import ContactButton from "@/components/layout/contactbutton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,9 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <div className="fixed bottom-4 right-4 z-50 ">
+            <ContactButton floating />
+          </div>
         <Footer />
       </body>
     </html>
