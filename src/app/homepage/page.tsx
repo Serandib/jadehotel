@@ -3,6 +3,7 @@
 import Container from "@/components/common/container";
 import { motion } from "framer-motion";
 import Script from "next/script";
+import { useEffect, useState } from "react";
 
 const packages = [
   {
@@ -34,6 +35,29 @@ const packages1 = [
     image: "/assets/home/052.jpg",
   },
 ];
+function Counter({ end }: { end: number }) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+    const duration = 1500;
+    const increment = end / (duration / 16);
+
+    const counter = setInterval(() => {
+      start += increment;
+      if (start >= end) {
+        setCount(end);
+        clearInterval(counter);
+      } else {
+        setCount(Math.floor(start));
+      }
+    }, 16);
+
+    return () => clearInterval(counter);
+  }, [end]);
+
+  return <span>{count}+</span>;
+}
 
 export default function Homepage() {
   return (
@@ -462,6 +486,40 @@ export default function Homepage() {
           </Container>
         </motion.section>
 
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mt-40 bg-primary text-white rounded-3xl py-20"
+        >
+          <Container>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+              {[
+                { number: 120, label: "Weddings" },
+                { number: 350, label: "Events" },
+                { number: 500, label: "Functions" },
+                { number: 85, label: "Professional Staff" },
+              ].map((item) => (
+                <motion.div
+                  key={item.label}
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 120 }}
+                  className="flex flex-col items-center"
+                >
+                  <h3 className="text-4xl md:text-5xl font-bold">
+                    <Counter end={item.number} />
+                  </h3>
+
+                  <p className="mt-3 text-sm md:text-base text-white/80 tracking-wide uppercase">
+                    {item.label}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </Container>
+        </motion.section>
+
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-4 text-center">
             {/* Google Reviews */}
@@ -503,6 +561,30 @@ export default function Homepage() {
               ></div>
             </div>
           </div>
+        </section>
+
+        <section className="py-20 bg-white">
+          <Container>
+            <div className="max-w-6xl mx-auto text-center mb-12">
+              <h2 className="text-3xl md:text-5xl font-semibold tracking-tight">
+                Find Us
+              </h2>
+              <p className="mt-4 text-lg text-black/60">
+                Visit Jade Green Boutique Hotel in Hambantota, Sri Lanka
+              </p>
+            </div>
+
+            <div className="relative w-full h-[450px] rounded-3xl overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9640916735057!2d81.12802497599209!3d6.135527127548249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae6bdfee8349837%3A0x7947ce983a4b8dec!2sJade%20Green%20Hotel%20Hambantota!5e0!3m2!1sen!2slk!4v1770797013609!5m2!1sen!2slk"
+                width="100%"
+                height="100%"
+                allowFullScreen
+                loading="lazy"
+                className="border-0 rounded-3xl"
+              ></iframe>
+            </div>
+          </Container>
         </section>
       </Container>
     </section>
