@@ -7,32 +7,32 @@ import { useEffect, useState } from "react";
 
 const packages = [
   {
-    title: "Rooms",
+    title: "Jade Signature Rooms",
     desc: "Luxury stay with breakfast",
-    image: "/assets/home/001.jpg",
+    image: "/assets/home/063.jpg",
   },
   {
-    title: "Reception Halls",
-    desc: "Perfect for weddings & events",
-    image: "/assets/home/035.jpg",
+    title: "The Green Room Bar",
+    desc: "Premium spirits & calm ambiance",
+    image: "/assets/home/0010.jpg",
   },
   {
-    title: "Halls",
-    desc: "Perfect for weddings & events",
-    image: "/assets/home/035.jpg",
+    title: "Emerald Table",
+    desc: "Refined flavors served in an elegant setting.",
+    image: "/assets/home/004.jpg",
   },
 ];
 
 const packages1 = [
   {
-    title: "Restaurant",
-    desc: "Fine dining with curated menus",
-    image: "/assets/home/042.jpg",
+    title: "Jade Royal Weddings",
+    desc: "Perfect for weddings & events",
+    image: "/assets/home/005.jpg",
   },
   {
-    title: "Bar",
-    desc: "Premium spirits & calm ambiance",
-    image: "/assets/home/052.jpg",
+    title: "Prestige Event Space",
+    desc: "A distinguished space for productive gatherings.",
+    image: "/assets/home/007.jpg",
   },
 ];
 function Counter({ end }: { end: number }) {
@@ -76,8 +76,9 @@ export default function Homepage() {
           </h1>
 
           <p className="mt-6 text-lg text-black/70 leading-relaxed">
-            A refined escape where comfort meets nature. Discover thoughtfully
-            designed experiences crafted for unforgettable moments.
+            Where comfort, elegance, and heartfelt hospitality unite. At Jade
+            Green Hotel, we create exceptional stays, memorable dining
+            experiences, and grand celebrations in a setting inspired by nature.
           </p>
         </motion.div>
 
@@ -109,17 +110,17 @@ export default function Homepage() {
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
 
               {/* Content */}
               <div className="relative z-10 flex flex-col justify-end h-full p-6 text-white">
                 <div className="h-1 w-10 bg-primary rounded-full mb-4 group-hover:w-16 transition-all" />
 
-                <h3 className="text-xl font-semibold tracking-tight">
+                <h3 className="text-2xl font-semibold tracking-tight ">
                   {pkg.title}
                 </h3>
 
-                <p className="mt-2 text-sm text-white/80">{pkg.desc}</p>
+                <p className="mt-2 text-lg text-white/80">{pkg.desc}</p>
 
                 <span className="mt-6 text-sm font-semibold text-white">
                   View Details →
@@ -162,11 +163,11 @@ export default function Homepage() {
               <div className="relative z-10 flex flex-col justify-end h-full p-6 text-white">
                 <div className="h-1 w-10 bg-primary rounded-full mb-4 group-hover:w-16 transition-all" />
 
-                <h3 className="text-xl font-semibold tracking-tight">
+                <h3 className="text-2xl font-semibold tracking-tight">
                   {pkg.title}
                 </h3>
 
-                <p className="mt-2 text-sm text-white/80">{pkg.desc}</p>
+                <p className="mt-2 text-lg text-white/80">{pkg.desc}</p>
 
                 <span className="mt-6 text-sm font-semibold text-white">
                   View Details →
@@ -429,7 +430,7 @@ export default function Homepage() {
                   />
 
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent opacity-80" />
+                  {/* <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent opacity-80" /> */}
 
                   {/* Content */}
                   <div className="relative z-10 p-8">

@@ -55,15 +55,32 @@ export default function AboutUSPage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Jade Green Boutique Hotel was founded to create a peaceful haven
-                for travelers seeking luxury and comfort. Surrounded by lush
-                greenery and scenic beauty, our hotel offers a blend of modern
-                design and natural serenity.
+                Jade Green began its journey in 2007 with a simple vision to
+                create a warm and welcoming dining experience in the heart of
+                Hambantota. What started as a humble restaurant, built on
+                passion, dedication, and a love for great food, quickly became a
+                favorite gathering place for families, friends, and travelers.
+                Over the years, with the trust and support of our valued guests,
+                Jade Green continued to grow. From a single restaurant, we
+                expanded into a full hospitality destination.
               </p>
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                Today, we proudly offer: 10 comfortable and well-appointed guest
+                rooms A refreshing swimming pool for relaxation A spacious
+                banquet hall accommodating over 350 guests Our signature
+                restaurant serving delicious local and international cuisine Our
+                banquet hall has become one of the most sought-after venues in
+                the area, hosting weddings, homecomings, corporate events, and
+                celebrations of every kind. Despite our growth, one thing has
+                never changed our commitment to genuine Sri Lankan hospitality.
+              </p>
+
               <p className="text-gray-600 leading-relaxed">
-                Our mission is to provide an unforgettable stay with warm
-                hospitality, premium amenities, and personalized service that
-                caters to every guest’s needs.
+                At Jade Green, every guest is treated like family, and every
+                event is handled with care and attention to detail. From a small
+                restaurant in 2007 to a complete hotel and event destination
+                today, our journey has been built on passion, quality, and
+                community. And this is only the beginning.
               </p>
             </div>
 
@@ -225,8 +242,8 @@ export default function AboutUSPage() {
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
             {[
               "Luxury Rooms",
-              "Fine Dining",
-              "Infinity Pool",
+              "Restaurant",
+              "Scenic Pool with Saltern Views",
               "Event Spaces",
             ].map((feature, idx) => (
               <motion.div
@@ -269,7 +286,7 @@ export default function AboutUSPage() {
           >
             {/* Team Image */}
             <Image
-              src="/assets/home/001.jpg"
+              src="/assets/about/003.jpg"
               alt="Jade Green Hotel Team"
               fill
               className="object-cover"

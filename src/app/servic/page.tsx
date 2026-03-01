@@ -54,21 +54,24 @@ export default function ServicePage() {
             </h2>
 
             <p className="text-black/70 leading-relaxed mb-6">
-              JadeGreen is a modern hotel offering the elegance of five-star
-              comforts at modest prices. Located in the heart of Hambantota, it
-              is easily accessible via the Colombo–Matara Expressway.
+              Jade Green is a charming boutique hotel offering refined comfort
+              and personalized hospitality at exceptional value. Conveniently
+              located in the heart of Hambantota, the hotel is easily accessible
+              via the Colombo to Mattala Expressway.
             </p>
 
             <p className="text-black/70 leading-relaxed">
-              Nestled within lush gardens and facing the scenic Hambantota
-              saltern, the hotel offers breathtaking views and peaceful
-              surroundings, just minutes away from pristine beaches.
+              Nestled amidst lush greenery and overlooking the scenic Hambantota
+              saltern, Jade Green offers tranquil surroundings and breathtaking
+              views. Just minutes away from pristine beaches, our hotel provides
+              the perfect blend of relaxation, nature, and modern comfort
+              ideal for both leisure stays and special celebrations.
             </p>
           </div>
 
           <div className="relative h-[420px] rounded-3xl overflow-hidden shadow-xl">
             <img
-              src="/assets/home/052.jpg"
+              src="/assets/servic/003.jpg"
               alt="Hotel View"
               className="h-full w-full object-cover"
             />
@@ -96,18 +99,18 @@ export default function ServicePage() {
             {[
               {
                 title: "Modern Comfort",
-                img: "/assets/home/046.jpg",
+                img: "/assets/servic/081.jpg",
                 desc: "Fully air-conditioned rooms over 300 sq. ft. with premium interiors.",
               },
               {
                 title: "Private Balconies",
-                img: "/assets/home/042.jpg",
+                img: "/assets/servic/094.jpg",
                 desc: "Each room features a private balcony with breathtaking saltern views.",
               },
               {
-                title: "Restful Sleep",
-                img: "/assets/home/035.jpg",
-                desc: "Extra-thick mattresses, fine linen, and calm interiors for deep rest.",
+                title: "Serene Surroundings",
+                img: "/assets/servic/004.jpg",
+                desc: "A quiet and soothing environment designed to refresh your mind and spirit.",
               },
             ].map((room) => (
               <div

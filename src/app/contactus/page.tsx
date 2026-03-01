@@ -37,7 +37,7 @@ export default function Contactus() {
             {/* Image */}
             <div className="relative h-[320px] rounded-3xl overflow-hidden shadow-xl">
               <img
-                src="/assets/home/046.jpg"
+                src="/assets/home/127.jpg"
                 alt="Jade Green Hotel"
                 className="h-full w-full object-cover"
               />
@@ -65,7 +65,7 @@ export default function Contactus() {
                 {
                   icon: <Clock size={22} />,
                   title: "Available",
-                  value: "7.00 AM – 10.30 PM",
+                  value: "24/7",
                 },
               ].map((item) => (
                 <div
@@ -99,7 +99,7 @@ export default function Contactus() {
 
               <div className="mt-2 flex justify-between text-black/70">
                 <span>Check-Out</span>
-                <span className="font-medium">12:00 PM</span>
+                <span className="font-medium">11:00 AM</span>
               </div>
             </div>
           </div>
