@@ -260,6 +260,74 @@ export default function AboutUSPage() {
         </Container>
       </section>
 
+      {/* Managing Director’s Message */}
+      {/* Managing Director’s Message */}
+      <section className="py-24 bg-primary/10">
+        <Container>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="max-w-5xl mx-auto text-center"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+              Managing Director’s Message
+            </h2>
+
+            {/* One Paragraph Message */}
+            <p className="text-gray-700 leading-relaxed text-lg">
+              Welcome to Jade Green Hotel Hambantota. Hospitality is not just
+              our business it is our legacy. Our journey in the hotel industry
+              in the deep South began with the pioneering Peacock Beach Hotel,
+              established in 1999 by the prominent gem merchant Late Mr. J.
+              Guruge, whose vision played an important role in shaping early
+              tourism development in Hambantota. Since 2007, we have been
+              managing and continuously upgrading our hospitality operations to
+              enhance guest comfort, facilities, and service standards. Today,
+              Jade Green reflects that ongoing commitment combining experience,
+              heritage, and modern hospitality to deliver memorable stays filled
+              with warmth, care, and the true spirit of the Southern coast.
+            </p>
+
+            {/* Director Images */}
+            <div className="grid md:grid-cols-2 gap- mt-16">
+              {/* Director 1 */}
+              <div className="text-center flex justify-center flex-col items-center">
+                <div className="relative h-70 w-60 rounded-2xl overflow-hidden shadow-xl mb-4  flex">
+                  <Image
+                    src="/assets/about/002.png"
+                    alt="Director"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="flex flex-col">
+                  <h3 className="text-lg font-semibold">Nalin Fernando </h3>
+                  <p className="text-sm text-gray-600">Director</p>
+                </div>
+              </div>
+
+              {/* Director 2 */}
+              <div className="text-center flex justify-center flex-col items-center">
+                <div className="relative h-70 w-60 rounded-2xl overflow-hidden shadow-xl mb-4  flex">
+                  <Image
+                    src="/assets/about/001.jpg"
+                    alt="Director"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="flex flex-col">
+                  <h3 className="text-lg font-semibold">Dilini Guruge</h3>
+                  <p className="text-sm text-gray-600">Director</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </Container>
+      </section>
+
       {/* Our Team Section */}
       <section className="py-24 bg-primary/10" id="team">
         <Container>

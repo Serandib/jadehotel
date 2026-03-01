@@ -10,7 +10,7 @@ const rooms = [
   {
     slug: "standard-double",
     title: "Standard Double",
-    size: "375 ft²",
+    size: "250 - 275 ft²",
     guests: "2 Guests",
     price: "LKR 18,000",
     desc: "Perfect for couples seeking comfort and tranquility.",

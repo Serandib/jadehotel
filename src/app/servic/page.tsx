@@ -155,7 +155,7 @@ export default function ServicePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              "Infinity Swimming Pool",
+              "Swimming Pool",
               "Authentic Sri Lankan Restaurant",
               "À La Carte Dining",
               "Room Service",
