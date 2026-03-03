@@ -88,10 +88,10 @@ export default function ServicePage() {
         >
           <div className="text-center max-w-4xl mx-auto mb-20">
             <h2 className="text-3xl md:text-4xl font-semibold">
-              Spacious Luxury Rooms
+              Luxury Experiences Await
             </h2>
             <p className="mt-4 text-lg text-black/60">
-              Designed for comfort, privacy, and complete relaxation.
+              Designed for comfort, privacy, dining, and complete relaxation.
             </p>
           </div>
 

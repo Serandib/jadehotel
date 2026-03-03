@@ -185,14 +185,14 @@ export default function RoomsPage() {
                       className="flex flex-col"
                     >
                       <p className="text-sm text-gray-500">From</p>
-                      <p className="text-lg font-bold text-green-700">
+                      {/* <p className="text-lg font-bold text-green-700">
                         {room.price}
                         <span className="text-sm font-normal text-gray-500">
                           {" "}
                           / night
                         </span>
-                      </p>
-                      {room.discount && (
+                      </p> */}
+                      {/* {room.discount && (
                         <motion.div
                           initial={{ opacity: 0, y: 8 }}
                           animate={{ opacity: 1, y: 0 }}
@@ -205,7 +205,7 @@ export default function RoomsPage() {
                             online booking
                           </span>
                         </motion.div>
-                      )}
+                      )} */}
                     </motion.div>
                   </div>
                 </div>

@@ -108,12 +108,12 @@ export default async function RoomDetailsPage({
                 <p className="text-xl font-semibold mt-1">{room.size}</p>
               </div>
 
-              <div className="rounded-2xl border p-6 text-center">
+              {/* <div className="rounded-2xl border p-6 text-center">
                 <p className="text-sm text-gray-500">Price</p>
                 <p className="text-xl font-bold mt-1 text-primary">
                   {room.price}
                 </p>
-              </div>
+              </div> */}
             </div>
 
             {/* Description */}
@@ -144,7 +144,7 @@ export default async function RoomDetailsPage({
           </div>
 
           {/* RIGHT – BOOKING CARD */}
-          <div className="sticky top-28 h-fit rounded-3xl border bg-white p-8 shadow-xl">
+          {/* <div className="sticky top-28 h-fit rounded-3xl border bg-white p-8 shadow-xl">
             <p className="text-sm text-gray-500 mb-1">Starting from</p>
 
             <p className="text-3xl font-bold text-green-700 mb-6">
@@ -170,7 +170,7 @@ export default async function RoomDetailsPage({
             <p className="text-xs text-gray-500 text-center">
               No credit card required · Free cancellation
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
     </Container>

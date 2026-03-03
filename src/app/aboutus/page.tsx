@@ -312,8 +312,8 @@ export default function AboutUSPage() {
               <div className="text-center flex justify-center flex-col items-center">
                 <div className="relative h-70 w-60 rounded-2xl overflow-hidden shadow-xl mb-4  flex">
                   <Image
-                    src="/assets/about/001.jpg"
-                    alt="Director"
+                    src="/assets/about/"
+                    alt="Dilini Guruge"
                     fill
                     className="object-cover"
                   />

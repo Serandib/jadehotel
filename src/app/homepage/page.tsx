@@ -2,6 +2,7 @@
 
 import Container from "@/components/common/container";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 import Script from "next/script";
 import { useEffect, useState } from "react";
 
@@ -12,7 +13,7 @@ const packages = [
     image: "/assets/home/063.jpg",
   },
   {
-    title: "The Green Room Bar",
+    title: "Araliya Bar",
     desc: "Premium spirits & calm ambiance",
     image: "/assets/home/0010.jpg",
   },
@@ -60,6 +61,7 @@ function Counter({ end }: { end: number }) {
 }
 
 export default function Homepage() {
+  const router = useRouter();
   return (
     <section className="py-32 bg-neutral-50">
       <Container>
@@ -446,7 +448,7 @@ export default function Homepage() {
                     </ul>
 
                     {/* Price + CTA */}
-                    <div className="mt-8 flex items-center justify-between mb-2">
+                    {/* <div className="mt-8 flex items-center justify-between mb-2">
                       <div>
                         <p className="text-sm text-black/50">From</p>
                         <p className="text-2xl font-semibold text-primary">
@@ -472,7 +474,7 @@ export default function Homepage() {
                         {room.discount} OFF
                         <span className="text-white/80 ">online booking</span>
                       </motion.div>
-                    )}
+                    )} */}
                   </div>
                 </motion.div>
               ))}
@@ -480,7 +482,10 @@ export default function Homepage() {
 
             {/* View All Rooms */}
             <div className="mt-20 text-center">
-              <button className="rounded-2xl bg-primary px-8 py-4 text-white text-lg font-semibold hover:scale-[1.03] transition-transform">
+              <button
+                className="rounded-2xl bg-primary px-8 py-4 text-white text-lg font-semibold hover:scale-[1.03] transition-transform"
+                onClick={() => router.push(`/rooms`)}
+              >
                 View All Rooms
               </button>
             </div>
