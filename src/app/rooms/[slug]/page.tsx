@@ -7,7 +7,10 @@ const rooms = [
     title: "Standard Double",
     size: "375 ft²",
     guests: "2 Guests",
-    price: "LKR 18,000",
+    priceBB: "LKR 0,000",
+    priceRO: "LKR 0,000",
+    priceHB: "LKR 0,000",
+    priceFB: "LKR 0,000",
     desc: "Perfect for couples seeking comfort and tranquility.",
     image: "/assets/rooms/092.jpg",
     amenities: ["Free WiFi", "AC", "Balcony", "Hot Water"],
@@ -16,33 +19,42 @@ const rooms = [
   {
     slug: "deluxe-triple",
     title: "Deluxe Triple",
-    size: "400 ft²",
+    size: "300 - 375 ft²",
     guests: "3 Guests",
-    price: "LKR 24,000",
+    priceBB: "LKR 19,950",
+    priceRO: "LKR 17,250",
+    priceHB: "LKR 24,450",
+    priceFB: "LKR 31,500",
     desc: "Spacious room ideal for small families or friends.",
     image: "/assets/rooms/120.jpg",
     tag: "Best Value",
     discount: "10%",
-    amenities: ["Free WiFi", "AC", "Balcony", "Hot Water"],
+    amenities: ["Tea/Coffee Making Facility", "Split Type Air-Conditioning", "Safe Deposit Box", "Hot/Cold Water", "IDD Facility", "Writing Desk", "TV" ],
   },
-{
+  {
     slug: "deluxe-family",
     title: "Deluxe Family",
-    size: "375 ft²",
+    size: "350 - 400 ft²",
     guests: "4 Guests",
-    price: "LKR 28,000",
+    priceBB: "LKR 23,100",
+    priceRO: "LKR 19,950",
+    priceHB: "LKR 27,300",
+    priceFB: "LKR 35,700",
     desc: "Designed for memorable family stays with extra comfort.",
     image: "/assets/rooms/080.jpg",
     tag: "Family Choice",
     discount: "10%",
-    amenities: ["Free WiFi", "AC", "Balcony", "Hot Water"],
+    amenities: ["Tea/Coffee Making Facility", "Split Type Air-Conditioning", "Safe Deposit Box", "Hot/Cold Water", "IDD Facility", "Writing Desk", "TV" ],
   },
   {
     slug: "deluxe-double",
     title: "Deluxe Double",
     size: "380 ft²",
     guests: "2 Guests",
-    price: "LKR 22,000",
+    priceBB: "LKR ,000",
+    priceRO: "LKR ,000",
+    priceHB: "LKR ,000",
+    priceFB: "LKR ,000",
     desc: "Luxury experience with modern interiors.",
     image: "/assets/rooms/084.jpg",
     tag: "Luxury",
@@ -51,6 +63,11 @@ const rooms = [
   },
   // add others here
 ];
+
+export function generateStaticParams() {
+  return rooms.map((room) => ({ slug: room.slug }));
+}
+
 export default async function RoomDetailsPage({
   params,
 }: {
@@ -144,14 +161,35 @@ export default async function RoomDetailsPage({
           </div>
 
           {/* RIGHT – BOOKING CARD */}
-          {/* <div className="sticky top-28 h-fit rounded-3xl border bg-white p-8 shadow-xl">
+          <div className="sticky top-28 h-fit rounded-3xl border bg-white p-8 shadow-xl">
             <p className="text-sm text-gray-500 mb-1">Starting from</p>
 
             <p className="text-3xl font-bold text-green-700 mb-6">
-              {room.price}
+              {room.priceRO}
               <span className="text-base font-normal text-gray-500">
                 {" "}
-                / night
+                / Room Only
+              </span>
+            </p>
+            <p className="text-3xl font-bold text-green-700 mb-6">
+              {room.priceBB}
+              <span className="text-base font-normal text-gray-500">
+                {" "}
+                / Bed & Breakfast
+              </span>
+            </p>
+            <p className="text-3xl font-bold text-green-700 mb-6">
+              {room.priceHB}
+              <span className="text-base font-normal text-gray-500">
+                {" "}
+                / Half Board
+              </span>
+            </p>
+            <p className="text-3xl font-bold text-green-700 mb-6">
+              {room.priceFB}
+              <span className="text-base font-normal text-gray-500">
+                {" "}
+                / Full Board
               </span>
             </p>
 
@@ -170,7 +208,7 @@ export default async function RoomDetailsPage({
             <p className="text-xs text-gray-500 text-center">
               No credit card required · Free cancellation
             </p>
-          </div> */}
+          </div>
         </div>
       </section>
     </Container>

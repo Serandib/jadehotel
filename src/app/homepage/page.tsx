@@ -386,16 +386,18 @@ export default function Homepage() {
             >
               {[
                 {
-                  name: "Deluxe Room",
-                  image: "/assets/rooms/080.jpg",
-                  price: "LKR 18,000",
+                  slug: "",
+                  name: "Standard Double",
+                  image: "/assets/rooms/00.jpg",
+                  price: "LKR ,000",
                   features: ["King Bed", "Balcony View", "Breakfast Included"],
                   discount: "10%",
                 },
                 {
-                  name: "Executive Suite",
-                  image: "/assets/rooms/084.jpg",
-                  price: "LKR 28,000",
+                  slug: "",
+                  name: "Deluxe Double",
+                  image: "/assets/rooms/0.jpg",
+                  price: "LKR ,000",
                   features: [
                     "Spacious Living Area",
                     "Premium Amenities",
@@ -404,13 +406,18 @@ export default function Homepage() {
                   discount: "10%",
                 },
                 {
-                  name: "Family Room",
-                  image: "/assets/rooms/107.jpg",
-                  price: "LKR 32,000",
+                  slug: "deluxe-family",
+                  name: "Deluxe Family",
+                  image: "/assets/rooms/080.jpg",
+                  price: "LKR 23,100",
                   features: [
-                    "Two Queen Beds",
-                    "Ideal for Families",
-                    "Extra Space",
+                    "Tea/Coffee Making Facility",
+                    "Split Type Air-Conditioning",
+                    "Safe Deposit Box",
+                    "Hot/Cold Water",
+                    "IDD Facility",
+                    "Writing Desk",
+                    "TV",
                   ],
                   discount: "10%",
                 },
@@ -448,19 +455,22 @@ export default function Homepage() {
                     </ul>
 
                     {/* Price + CTA */}
-                    {/* <div className="mt-8 flex items-center justify-between mb-2">
+                    <div className="mt-8 flex items-center justify-between mb-2">
                       <div>
                         <p className="text-sm text-black/50">From</p>
                         <p className="text-2xl font-semibold text-primary">
                           {room.price}
                           <span className="text-sm font-normal text-black/50">
                             {" "}
-                            / night
+                            / Onwards
                           </span>
                         </p>
                       </div>
 
-                      <button className="rounded-xl border border-primary px-5 py-2 text-sm font-semibold text-primary hover:bg-primary hover:text-white transition-colors">
+                      <button
+                        className="rounded-xl border border-primary px-2 py-2 text-sm font-semibold text-primary hover:bg-primary hover:text-white transition-colors"
+                        onClick={() => router.push(`/rooms/${room.slug}`)}
+                      >
                         View Details
                       </button>
                     </div>
@@ -474,7 +484,7 @@ export default function Homepage() {
                         {room.discount} OFF
                         <span className="text-white/80 ">online booking</span>
                       </motion.div>
-                    )} */}
+                    )}
                   </div>
                 </motion.div>
               ))}

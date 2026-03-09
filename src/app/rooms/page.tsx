@@ -10,9 +10,9 @@ const rooms = [
   {
     slug: "standard-double",
     title: "Standard Double",
-    size: "250 - 275 ft²",
+    size: "ft²",
     guests: "2 Guests",
-    price: "LKR 18,000",
+    price: "LKR ",
     desc: "Perfect for couples seeking comfort and tranquility.",
     image: "/assets/rooms/092.jpg",
     tag: "Popular",
@@ -21,9 +21,9 @@ const rooms = [
   {
     slug: "deluxe-triple",
     title: "Deluxe Triple",
-    size: "400 ft²",
+    size: "300 - 375 ft²",
     guests: "3 Guests",
-    price: "LKR 24,000",
+    price: "LKR 19,950",
     desc: "Spacious room ideal for small families or friends.",
     image: "/assets/rooms/120.jpg",
     tag: "Best Value",
@@ -32,9 +32,9 @@ const rooms = [
   {
     slug: "deluxe-family",
     title: "Deluxe Family",
-    size: "375 ft²",
+    size: "350 - 400 ft²",
     guests: "4 Guests",
-    price: "LKR 28,000",
+    price: "LKR 23,100",
     desc: "Designed for memorable family stays with extra comfort.",
     image: "/assets/rooms/080.jpg",
     tag: "Family Choice",
@@ -43,9 +43,9 @@ const rooms = [
   {
     slug: "deluxe-double",
     title: "Deluxe Double",
-    size: "380 ft²",
+    size: " ft²",
     guests: "2 Guests",
-    price: "LKR 22,000",
+    price: "LKR ",
     desc: "Luxury experience with modern interiors.",
     image: "/assets/rooms/084.jpg",
     tag: "Luxury",
@@ -185,14 +185,14 @@ export default function RoomsPage() {
                       className="flex flex-col"
                     >
                       <p className="text-sm text-gray-500">From</p>
-                      {/* <p className="text-lg font-bold text-green-700">
+                      <p className="text-lg font-bold text-green-700">
                         {room.price}
                         <span className="text-sm font-normal text-gray-500">
                           {" "}
-                          / night
+                          / onwards
                         </span>
-                      </p> */}
-                      {/* {room.discount && (
+                      </p>
+                      {room.discount && (
                         <motion.div
                           initial={{ opacity: 0, y: 8 }}
                           animate={{ opacity: 1, y: 0 }}
@@ -205,7 +205,7 @@ export default function RoomsPage() {
                             online booking
                           </span>
                         </motion.div>
-                      )} */}
+                      )}
                     </motion.div>
                   </div>
                 </div>

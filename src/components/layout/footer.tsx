@@ -30,14 +30,14 @@ export default function Footer() {
             </div>
             <div className="flex flex-row absolute mt-32 gap-3 hover:cursor-pointer">
               <a
-                href="https://www.instagram.com/serendibgo?igsh=c3h2bTE2cjJvaWth"
+                href="https://www.instagram.com/jade_green_hambantota?igsh=NjRseW54bmxmNmI="
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Instagram size={20} strokeWidth={2} />
               </a>
               <a
-                href="https://www.facebook.com/share/17hceDzHQc/"
+                href="https://www.facebook.com/share/1Ab9VQQPyT/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -45,7 +45,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://youtube.com/@serendibgo?si=WVVxtIApAHYEw16T"
+                href="https://youtube.com/@jadegreenhotelhambantota?si=JCdJonq40bfCPfIL"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -53,7 +53,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://www.linkedin.com/company/serendibgo-vacations/"
+                href="https://www.linkedin.com/company/jade-green-hotel-hambantota/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -61,7 +61,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://www.tripadvisor.co.uk/Attraction_Review-g293962-d33966733-Reviews-SerendibGo_Vacations-Colombo_Western_Province.html"
+                href="https://www.tripadvisor.co.uk/Hotel_Review-g1027209-d10807765-Reviews-Jade_Green_Hotel_Hambantota-Hambantota_Tangalle_Southern_Province.html"
                 target="_blank"
                 rel="noopener noreferrer"
               >

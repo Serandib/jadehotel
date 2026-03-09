@@ -2,8 +2,10 @@
 
 import Container from "@/components/common/container";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 export default function ServicePage() {
+  const router = useRouter();
   return (
     <section className="bg-neutral-50">
       <Container>
@@ -35,7 +37,10 @@ export default function ServicePage() {
 
           {/* CTAs */}
           <div className="mt-12 flex flex-wrap gap-6">
-            <button className="px-8 py-4 rounded-xl bg-primary text-white font-semibold text-lg hover:scale-105 transition-transform">
+            <button
+              className="px-8 py-4 rounded-xl bg-primary text-white font-semibold text-lg hover:scale-105 transition-transform"
+              onClick={() => router.push(`/rooms`)}
+            >
               Book Your Stay
             </button>
           </div>
@@ -50,7 +55,7 @@ export default function ServicePage() {
         >
           <div>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-6">
-              JadeGreen Hambantota
+              Jade Green Hambantota
             </h2>
 
             <p className="text-black/70 leading-relaxed mb-6">
@@ -64,8 +69,8 @@ export default function ServicePage() {
               Nestled amidst lush greenery and overlooking the scenic Hambantota
               saltern, Jade Green offers tranquil surroundings and breathtaking
               views. Just minutes away from pristine beaches, our hotel provides
-              the perfect blend of relaxation, nature, and modern comfort
-              ideal for both leisure stays and special celebrations.
+              the perfect blend of relaxation, nature, and modern comfort ideal
+              for both leisure stays and special celebrations.
             </p>
           </div>
 
@@ -181,7 +186,7 @@ export default function ServicePage() {
         <Container>
           <div className="text-center text-white max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-semibold">
-              Experience JadeGreen Hospitality
+              Experience Jade Green Hospitality
             </h2>
 
             <p className="mt-4 text-white/80 text-lg">
@@ -189,7 +194,7 @@ export default function ServicePage() {
               service in the heart of Hambantota.
             </p>
 
-            <button className="mt-10 px-8 py-4 rounded-xl bg-white text-primary font-semibold hover:scale-105 transition-transform">
+            <button className="mt-10 px-8 py-4 rounded-xl bg-white text-primary font-semibold hover:scale-105 transition-transform" onClick={() => router.push(`/rooms`)}>
               Book Your Stay
             </button>
           </div>

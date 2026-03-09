@@ -17,7 +17,7 @@ export default function ContactButton({
       transition={{ duration: 0.4 }}
       className="fixed bottom-6 right-6 z-50 block "
     >
-      <Link href="https://wa.me/94771781176">
+      <Link href="https://wa.me/94715486103">
         <motion.button
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
