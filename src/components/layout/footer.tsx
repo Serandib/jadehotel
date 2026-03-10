@@ -23,7 +23,7 @@ export default function Footer() {
             <div className="relative mb-">
               <Image
                 src="/assets/logo.png"
-                alt="SerandibGo logo"
+                alt="Jade Green"
                 width={180}
                 height={180}
               />
@@ -103,7 +103,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-row justify-center gap-10">
-          © {new Date().getFullYear()} serandibgo.com
+          © {new Date().getFullYear()} jadegreen.lk
         </div>
       </div>
     </footer>

@@ -11,16 +11,19 @@ const packages = [
     title: "Jade Signature Rooms",
     desc: "Luxury stay with breakfast",
     image: "/assets/home/063.jpg",
+    link: "/rooms",
   },
   {
     title: "Araliya Bar",
     desc: "Premium spirits & calm ambiance",
     image: "/assets/home/0010.jpg",
+    link: "/",
   },
   {
     title: "Emerald Table",
     desc: "Refined flavors served in an elegant setting.",
     image: "/assets/home/004.jpg",
+    link: "/restaurant",
   },
 ];
 
@@ -29,11 +32,13 @@ const packages1 = [
     title: "Jade Royal Weddings",
     desc: "Perfect for weddings & events",
     image: "/assets/home/005.jpg",
+    link: "/weddings",
   },
   {
     title: "Prestige Event Space",
     desc: "A distinguished space for productive gatherings.",
     image: "/assets/home/007.jpg",
+    link: "/",
   },
 ];
 function Counter({ end }: { end: number }) {
@@ -104,6 +109,7 @@ export default function Homepage() {
               whileHover={{ y: -10 }}
               transition={{ type: "spring", stiffness: 140 }}
               className="group relative h-[360px] rounded-3xl overflow-hidden shadow-lg cursor-pointer"
+              onClick={() => router.push(pkg.link)}
             >
               {/* Background Image */}
               <div
@@ -151,6 +157,7 @@ export default function Homepage() {
               whileHover={{ y: -10 }}
               transition={{ type: "spring", stiffness: 140 }}
               className="group relative h-[360px] md:w-[720px] rounded-3xl overflow-hidden shadow-lg cursor-pointer"
+              onClick={() => router.push(pkg.link)}
             >
               {/* Background Image */}
               <div
@@ -333,13 +340,9 @@ export default function Homepage() {
                   transition={{ type: "spring", stiffness: 120 }}
                   className="group relative rounded-3xl bg-white border border-black/5 p-10 shadow-sm hover:shadow-2xl transition-all"
                 >
-                  {/* Accent line */}
                   <div className="absolute top-0 left-0 h-[3px] w-12 bg-primary rounded-full transition-all duration-500 group-hover:w-24" />
-
-                  {/* Soft glow */}
                   <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-700 bg-gradient-to-br from-primary/5 via-transparent to-transparent pointer-events-none" />
 
-                  {/* Content */}
                   <h3 className="text-xl font-semibold tracking-tight">
                     {item.title}
                   </h3>
@@ -362,7 +365,6 @@ export default function Homepage() {
           className="mt-40"
         >
           <Container>
-            {/* Heading */}
             <div className="max-w-4xl mx-auto text-center mb-24">
               <h2 className="text-3xl md:text-5xl font-semibold tracking-tight">
                 Luxury Rooms & Suites
@@ -374,7 +376,6 @@ export default function Homepage() {
               </p>
             </div>
 
-            {/* Rooms Grid */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -386,22 +387,34 @@ export default function Homepage() {
             >
               {[
                 {
-                  slug: "",
-                  name: "Standard Double",
-                  image: "/assets/rooms/00.jpg",
-                  price: "LKR ,000",
-                  features: ["King Bed", "Balcony View", "Breakfast Included"],
+                  slug: "deluxe-single",
+                  name: "Deluxe Single",
+                  image: "/assets/rooms/092.jpg",
+                  price: "LKR 13,650",
+                  features: [
+                    "Tea/Coffee Making Facility",
+                    "Split Type Air-Conditioning",
+                    "Safe Deposit Box",
+                    "Hot/Cold Water",
+                    "IDD Facility",
+                    "Writing Desk",
+                    "TV",
+                  ],
                   discount: "10%",
                 },
                 {
-                  slug: "",
+                  slug: "deluxe-double",
                   name: "Deluxe Double",
-                  image: "/assets/rooms/0.jpg",
-                  price: "LKR ,000",
+                  image: "/assets/rooms/084.jpg",
+                  price: "LKR 18,300",
                   features: [
-                    "Spacious Living Area",
-                    "Premium Amenities",
-                    "City View",
+                    "Tea/Coffee Making Facility",
+                    "Split Type Air-Conditioning",
+                    "Safe Deposit Box",
+                    "Hot/Cold Water",
+                    "IDD Facility",
+                    "Writing Desk",
+                    "TV",
                   ],
                   discount: "10%",
                 },
@@ -432,29 +445,22 @@ export default function Homepage() {
                   transition={{ type: "spring", stiffness: 120 }}
                   className="group relative rounded-3xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition-all"
                 >
-                  {/* Image */}
                   <div
                     className="h-64 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                     style={{ backgroundImage: `url(${room.image})` }}
                   />
 
-                  {/* Overlay */}
-                  {/* <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent opacity-80" /> */}
-
-                  {/* Content */}
                   <div className="relative z-10 p-8">
                     <h3 className="text-xl font-semibold tracking-tight">
                       {room.name}
                     </h3>
 
-                    {/* Features */}
                     <ul className="mt-4 space-y-2 text-sm text-black/60">
                       {room.features.map((f) => (
                         <li key={f}>• {f}</li>
                       ))}
                     </ul>
 
-                    {/* Price + CTA */}
                     <div className="mt-8 flex items-center justify-between mb-2">
                       <div>
                         <p className="text-sm text-black/50">From</p>
@@ -490,7 +496,6 @@ export default function Homepage() {
               ))}
             </motion.div>
 
-            {/* View All Rooms */}
             <div className="mt-20 text-center">
               <button
                 className="rounded-2xl bg-primary px-8 py-4 text-white text-lg font-semibold hover:scale-[1.03] transition-transform"
@@ -537,46 +542,7 @@ export default function Homepage() {
         </motion.section>
 
         <section className="py-20 bg-white">
-          <div className="max-w-6xl mx-auto px-4 text-center">
-            {/* Google Reviews */}
-            <div className="mb-16">
-              <h3 className="text-xl font-semibold mb-6">Google Reviews</h3>
-              <Script
-                src="https://apps.elfsight.com/p/platform.js"
-                strategy="afterInteractive"
-              />
-              <div
-                className="elfsight-app-52b0c6dd-1124-45f1-b4fa-3f505699d265"
-                data-elfsight-app-lazy
-              ></div>{" "}
-            </div>
-
-            {/* Tripadvisor Reviews */}
-            <div>
-              <h3 className="text-xl font-semibold mb-6">
-                Tripadvisor Reviews
-              </h3>
-
-              <script src="https://elfsightcdn.com/platform.js" async></script>
-              <div
-                className="elfsight-app-a8ef8401-454f-4791-af68-c1f18aa65111"
-                data-elfsight-app-lazy
-              ></div>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold mb-6">
-                Booking.com Reviews
-              </h3>
-
-              <script src="https://elfsightcdn.com/platform.js" async></script>
-              <script src="https://elfsightcdn.com/platform.js" async></script>
-              <div
-                className="elfsight-app-3adb0a01-e4f6-44a4-b462-00947657a34c"
-                data-elfsight-app-lazy
-              ></div>
-            </div>
-          </div>
+          <div className="max-w-6xl mx-auto px-4 text-center"></div>
         </section>
 
         <section className="py-20 bg-white">

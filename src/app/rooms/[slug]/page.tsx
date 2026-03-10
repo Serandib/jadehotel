@@ -3,17 +3,17 @@ import Container from "@/components/common/container";
 
 const rooms = [
   {
-    slug: "standard-double",
-    title: "Standard Double",
-    size: "375 ft²",
-    guests: "2 Guests",
-    priceBB: "LKR 0,000",
-    priceRO: "LKR 0,000",
-    priceHB: "LKR 0,000",
-    priceFB: "LKR 0,000",
+    slug: "deluxe-single",
+    title: "Deluxe Single",
+    size: "250 - 275 ft²",
+    guests: "1 Guests",
+    priceBB: "LKR 13,650",
+    priceRO: "LKR 12,450",
+    priceHB: "LKR 15,150",
+    priceFB: "LKR 17,750",
     desc: "Perfect for couples seeking comfort and tranquility.",
     image: "/assets/rooms/092.jpg",
-    amenities: ["Free WiFi", "AC", "Balcony", "Hot Water"],
+    amenities: ["Tea/Coffee Making Facility", "Split Type Air-Conditioning", "Safe Deposit Box", "Hot/Cold Water", "IDD Facility", "Writing Desk", "TV"],
     discount: "10%",
   },
   {
@@ -49,17 +49,17 @@ const rooms = [
   {
     slug: "deluxe-double",
     title: "Deluxe Double",
-    size: "380 ft²",
+    size: "300 - 350 ft²",
     guests: "2 Guests",
-    priceBB: "LKR ,000",
-    priceRO: "LKR ,000",
-    priceHB: "LKR ,000",
-    priceFB: "LKR ,000",
+    priceBB: "LKR 18,300",
+    priceRO: "LKR 15,250",
+    priceHB: "LKR 19,950",
+    priceFB: "LKR 25,100",
     desc: "Luxury experience with modern interiors.",
     image: "/assets/rooms/084.jpg",
     tag: "Luxury",
     discount: "10%",
-    amenities: ["Free WiFi", "AC", "Balcony", "Hot Water"],
+    amenities: ["Tea/Coffee Making Facility", "Split Type Air-Conditioning", "Safe Deposit Box", "Hot/Cold Water", "IDD Facility", "Writing Desk", "TV"],
   },
   // add others here
 ];
@@ -164,28 +164,28 @@ export default async function RoomDetailsPage({
           <div className="sticky top-28 h-fit rounded-3xl border bg-white p-8 shadow-xl">
             <p className="text-sm text-gray-500 mb-1">Starting from</p>
 
-            <p className="text-3xl font-bold text-green-700 mb-6">
+            <p className="md:text-3xl text-2xl font-bold text-green-700 mb-6">
               {room.priceRO}
               <span className="text-base font-normal text-gray-500">
                 {" "}
                 / Room Only
               </span>
             </p>
-            <p className="text-3xl font-bold text-green-700 mb-6">
+            <p className="md:text-3xl text-2xl font-bold text-green-700 mb-6">
               {room.priceBB}
               <span className="text-base font-normal text-gray-500">
                 {" "}
                 / Bed & Breakfast
               </span>
             </p>
-            <p className="text-3xl font-bold text-green-700 mb-6">
+            <p className="md:text-3xl text-2xl font-bold text-green-700 mb-6">
               {room.priceHB}
               <span className="text-base font-normal text-gray-500">
                 {" "}
                 / Half Board
               </span>
             </p>
-            <p className="text-3xl font-bold text-green-700 mb-6">
+            <p className="md:text-3xl text-2xl font-bold text-green-700 mb-6">
               {room.priceFB}
               <span className="text-base font-normal text-gray-500">
                 {" "}

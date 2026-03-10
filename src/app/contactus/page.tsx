@@ -55,12 +55,12 @@ export default function Contactus() {
                 {
                   icon: <Mail size={22} />,
                   title: "Email",
-                  value: "info@jadegreen.lk",
+                  value: "jadegreenhotel@gmail.com ",
                 },
                 {
                   icon: <MapPin size={22} />,
                   title: "Location",
-                  value: "Leywaya Road, Hambantota",
+                  value: "Lewaya Road, Hambantota",
                 },
                 {
                   icon: <Clock size={22} />,
@@ -94,7 +94,7 @@ export default function Contactus() {
 
               <div className="flex justify-between text-black/70">
                 <span>Check-In</span>
-                <span className="font-medium">14:00 PM</span>
+                <span className="font-medium">02:00 PM</span>
               </div>
 
               <div className="mt-2 flex justify-between text-black/70">
@@ -134,7 +134,7 @@ export default function Contactus() {
                 </label>
                 <input
                   type="email"
-                  placeholder="you@example.com"
+                  placeholder="jadegreenhotel@gmail.com "
                   className="w-full h-12 rounded-xl border border-black/10 px-4 focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>

@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.jadegreen.lk"),
   title: {
-    default: "Jade Green Hotel Hambantota | Hotel, Wedding Hall & Restaurant",
+    default: "Jade Green Hotel Hambantota | Hotels in Hambantota",
     template: "%s | Jade Green Hotel Hambantota",
   },
   description:

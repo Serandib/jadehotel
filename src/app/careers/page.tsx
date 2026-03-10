@@ -5,65 +5,22 @@ import { motion } from "framer-motion";
 import { Briefcase, Users, Sparkles } from "lucide-react";
 
 const jobs = [
-  {
-    title: "Front Office Executive",
-    description:
-      "Responsible for welcoming guests, handling reservations, and ensuring excellent customer service.",
-    responsibilities: [
-      "Greet and assist guests professionally",
-      "Handle check-in and check-out procedures",
-      "Manage bookings and inquiries",
-    ],
-    requirements: [
-      "Good communication skills",
-      "Basic computer knowledge",
-      "Previous hotel experience is an advantage",
-    ],
-  },
-  {
-    title: "Housekeeping Staff",
-    description:
-      "Ensure cleanliness and hygiene standards are maintained throughout the hotel.",
-    responsibilities: [
-      "Clean and maintain guest rooms",
-      "Ensure linen and supplies are replenished",
-      "Report maintenance issues",
-    ],
-    requirements: [
-      "Attention to detail",
-      "Ability to work flexible hours",
-      "Prior experience preferred",
-    ],
-  },
-  {
-    title: "Chef / Kitchen Assistant",
-    description:
-      "Support kitchen operations and assist in preparing high-quality meals.",
-    responsibilities: [
-      "Assist chefs in food preparation",
-      "Maintain kitchen cleanliness",
-      "Follow food safety standards",
-    ],
-    requirements: [
-      "Basic culinary knowledge",
-      "Ability to work under pressure",
-      "Hotel or restaurant experience preferred",
-    ],
-  },
-  {
-    title: "Restaurant Service Staff",
-    description: "Provide friendly and efficient service to restaurant guests.",
-    responsibilities: [
-      "Take food and beverage orders",
-      "Serve guests courteously",
-      "Maintain dining area cleanliness",
-    ],
-    requirements: [
-      "Good interpersonal skills",
-      "Customer-focused attitude",
-      "Prior experience is a plus",
-    ],
-  },
+  // {
+  //   title: "Front Office Executive",
+  //   description:
+  //     "Responsible for welcoming guests, handling reservations, and ensuring excellent customer service.",
+  //   responsibilities: [
+  //     "Greet and assist guests professionally",
+  //     "Handle check-in and check-out procedures",
+  //     "Manage bookings and inquiries",
+  //   ],
+  //   requirements: [
+  //     "Good communication skills",
+  //     "Basic computer knowledge",
+  //     "Previous hotel experience is an advantage",
+  //   ],
+  // },
+  
 ];
 
 export default function CareersPage() {
@@ -158,13 +115,13 @@ export default function CareersPage() {
             transition={{ duration: 1 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold">Current Openings</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Currently not Openings</h2>
             <p className="text-gray-700 mt-4">
               Click on a role to view job responsibilities and details.
             </p>
           </motion.div>
 
-          <div className="max-w-3xl mx-auto space-y-4">
+          {/* <div className="max-w-3xl mx-auto space-y-4">
             {jobs.map((job, index) => (
               <motion.details
                 key={index}
@@ -180,7 +137,6 @@ export default function CareersPage() {
                   </span>
                 </summary>
 
-                {/* Job Details */}
                 <div className="mt-6 space-y-4 text-gray-600">
                   <p>{job.description}</p>
 
@@ -209,13 +165,13 @@ export default function CareersPage() {
                   <p className="pt-4 font-medium text-gray-800">
                     📧 Send your CV to:{" "}
                     <span className="text-primary">
-                      careers@jadegreenhotel.com
+                      jadegreenhotel@gmail.com 
                     </span>
                   </p>
                 </div>
               </motion.details>
             ))}
-          </div>
+          </div> */}
         </Container>
       </section>
     </>

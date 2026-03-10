@@ -15,10 +15,7 @@ export default function ServicePage() {
           transition={{ duration: 1.1, ease: "easeOut" }}
           className="relative z-10 flex flex-col justify-center pt-32 max-w-5xl"
         >
-          {/* Subheading */}
-          <span className="inline-block w-fit mb-6 px-4 py-2 rounded-full bg-white/10 text-primary2 text-sm tracking-wide backdrop-blur-md">
-            Five-Star Comfort • Nature-Inspired Luxury
-          </span>
+          
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl xl:text-7xl font-extrabold text-primary2 tracking-tight leading-tight">

@@ -8,14 +8,25 @@ import { useRouter } from "next/navigation";
 
 const rooms = [
   {
-    slug: "standard-double",
-    title: "Standard Double",
-    size: "ft²",
-    guests: "2 Guests",
-    price: "LKR ",
+    slug: "deluxe-single",
+    title: "Deluxe Single",
+    size: "250 - 275 ft²",
+    guests: "1 Guests",
+    price: "LKR 13,650",
     desc: "Perfect for couples seeking comfort and tranquility.",
     image: "/assets/rooms/092.jpg",
     tag: "Popular",
+    discount: "10%",
+  },
+  {
+    slug: "deluxe-double",
+    title: "Deluxe Double",
+    size: " 300 - 350 ft²",
+    guests: "2 Guests",
+    price: "LKR 18,300",
+    desc: "Luxury experience with modern interiors.",
+    image: "/assets/rooms/084.jpg",
+    tag: "Luxury",
     discount: "10%",
   },
   {
@@ -38,17 +49,6 @@ const rooms = [
     desc: "Designed for memorable family stays with extra comfort.",
     image: "/assets/rooms/080.jpg",
     tag: "Family Choice",
-    discount: "10%",
-  },
-  {
-    slug: "deluxe-double",
-    title: "Deluxe Double",
-    size: " ft²",
-    guests: "2 Guests",
-    price: "LKR ",
-    desc: "Luxury experience with modern interiors.",
-    image: "/assets/rooms/084.jpg",
-    tag: "Luxury",
     discount: "10%",
   },
 ];
@@ -161,7 +161,10 @@ export default function RoomsPage() {
                 </div>
 
                 {/* Content */}
-                <div className="p-6">
+                <button
+                  className="p-6 text-start"
+                  onClick={() => router.push(`/rooms/${room.slug}`)}
+                >
                   <h3 className="text-xl font-semibold mb-1">
                     Jade Green – {room.title}
                   </h3>
@@ -199,16 +202,13 @@ export default function RoomsPage() {
                           transition={{ duration: 0.4 }}
                           className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-red-400 px-4 py-1.5 text-xs font-semibold text-white shadow-lg w-fit"
                         >
-                          
                           {room.discount} OFF
-                          <span className="text-white/80 ">
-                            online booking
-                          </span>
+                          <span className="text-white/80 ">online booking</span>
                         </motion.div>
                       )}
                     </motion.div>
                   </div>
-                </div>
+                </button>
               </motion.div>
             ))}
           </div>

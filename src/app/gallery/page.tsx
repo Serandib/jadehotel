@@ -8,25 +8,34 @@ import { X } from "lucide-react";
 
 // All gallery images
 const galleryData: Record<string, string[]> = {
-  Weddings: [
-    "/assets/gallery/weddings/080.jpg",
-    "/assets/gallery/weddings/084.jpg",
+  Banquet: [
+    "/assets/gallery/weddings/003.jpg",
+    "/assets/gallery/weddings/007.jpg",
+    "/assets/gallery/weddings/008.jpg",
+    "/assets/gallery/weddings/011.jpg",
+    "/assets/gallery/weddings/014.jpg",
+    "/assets/gallery/weddings/015.jpg",
   ],
-  Events: [
-    "/assets/gallery/even/042.jpg",
-    "/assets/gallery/even/046.jpg",
+  Pool: [
+    "/assets/gallery/pool/001.jpg",
+    "/assets/gallery/pool/035.jpg",
+    "/assets/gallery/pool/036.jpg",
+    "/assets/gallery/pool/042.jpg",
+    "/assets/gallery/pool/046.jpg",
+    "/assets/gallery/pool/052.jpg",
   ],
-  Functions: [
-    "/assets/gallery/functions/001.jpg",
-    "/assets/gallery/functions/035.jpg",
+  Garden: [
+    "/assets/gallery/gard/033.jpg",
+    "/assets/gallery/gard/053.jpg",
+    "/assets/gallery/gard/074.jpg",
   ],
 };
 
 // Representative cover images for each folder
 const folderCovers: Record<string, string> = {
-  Weddings: "/assets/gallery/weddings/080.jpg",
-  Events: "/assets/gallery/even/042.jpg",
-  Functions: "/assets/gallery/functions/001.jpg",
+  Banquet: "/assets/gallery/weddings/015.jpg",
+  Pool: "/assets/gallery/pool/035.jpg",
+  Garden: "/assets/gallery/gard/033.jpg",
 };
 
 export default function GalleryPage() {
