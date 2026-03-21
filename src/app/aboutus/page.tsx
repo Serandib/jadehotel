@@ -86,7 +86,7 @@ export default function AboutUSPage() {
 
             <div className="relative h-80 md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/assets/home/042.jpg"
+                src="/assets/about/004.jpg"
                 alt="Our Story"
                 fill
                 className="object-cover"
@@ -312,7 +312,7 @@ export default function AboutUSPage() {
               <div className="text-center flex justify-center flex-col items-center">
                 <div className="relative h-70 w-60 rounded-2xl overflow-hidden shadow-xl mb-4  flex">
                   <Image
-                    src="/assets/about/"
+                    src="/assets/about/00.jpg"
                     alt="Dilini Guruge"
                     fill
                     className="object-cover"

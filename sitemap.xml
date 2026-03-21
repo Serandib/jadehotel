@@ -1,29 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-<loc>https://www.jadegreen.lk/</loc>
-</url>
-
-<url>
-<loc>https://www.jadegreen.lk/aboutus</loc>
-</url>
 
 <url>
-<loc>https://www.jadegreen.lk/rooms</loc>
+  <loc>https://www.jadegreen.lk/</loc>
+  <lastmod>2026-03-15T20:09:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.jadegreen.lk/servic/</loc>
+  <lastmod>2026-03-15T20:09:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.jadegreen.lk/rooms/</loc>
+  <lastmod>2026-03-15T20:09:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.jadegreen.lk/gallery/</loc>
+  <lastmod>2026-03-15T20:09:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.jadegreen.lk/aboutus/</loc>
+  <lastmod>2026-03-15T20:09:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.jadegreen.lk/contactus/</loc>
+  <lastmod>2026-03-15T20:09:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.jadegreen.lk/careers/</loc>
+  <lastmod>2026-03-15T20:09:16+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
-<url>
-<loc>https://www.jadegreen.lk/gallery</loc>
-</url>
-
-<url>
-<loc>https://www.jadegreen.lk/contactus</loc>
-</url>
-
-<url>
-<loc>https://www.jadegreen.lk/careers</loc>
-</url>
 
 </urlset>

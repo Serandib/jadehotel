@@ -6,11 +6,21 @@ import Container from "@/components/common/container";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Sparkles, Eye } from "lucide-react";
 
-const emeraldMenuImages = [
-  "/assets/menu/008.jpg",
-  "/assets/menu/8.jpg",
-  "/assets/menu/08.jpg",
+const emeraldMenuImages = ["/assets/menu/001.jpg", "/assets/menu/002.jpg"];
+
+const emeraldMenuContent = [
+  {
+    label: "À La Carte Selection",
+    title: "A curated menu of signature flavors",
+    desc: "Every dish is prepared to deliver a rich and satisfying dining experience.",
+  },
+  {
+    label: "Chef’s Special Highlights",
+    title: "Distinctive dishes for memorable dining",
+    desc: "If you are searching for a restaurant in Hambantota with great food and a peaceful atmosphere, Emerald Table at Jade Green Hotel offers the perfect setting.",
+  },
 ];
+
 export default function EmeraldTablePage() {
   const [activeImage, setActiveImage] = useState<string | null>(null);
 
@@ -43,9 +53,16 @@ export default function EmeraldTablePage() {
             </h1>
 
             <p className="mt-6 text-base md:text-lg leading-relaxed text-black/65 max-w-3xl mx-auto">
-              Discover a refined menu presentation curated for elegant dining,
-              memorable celebrations, and premium hospitality at Jade Green
-              Hotel.
+              Welcome to Emerald Table, the signature dining experience at Jade
+              Green Hotel Hambantota.
+            </p>
+            <p className="mt-6 text-base md:text-lg leading-relaxed text-black/65 max-w-3xl mx-auto">
+              Designed to reflect elegance, warmth, and exceptional taste,
+              Emerald Table offers a refined yet relaxed atmosphere where guests
+              can enjoy carefully crafted cuisine in a beautiful setting.
+              Whether you are joining us for a casual lunch, a family dinner, or
+              a special gathering, our restaurant delivers an experience that
+              blends flavor, comfort, and hospitality.
             </p>
           </motion.div>
         </Container>
@@ -67,17 +84,18 @@ export default function EmeraldTablePage() {
               >
                 <div className="space-y-5">
                   <div className="inline-flex items-center rounded-full bg-emerald-50 px-4 py-2 text-sm font-medium text-emerald-700">
-                    Menu Panel {index + 1}
+                    {emeraldMenuContent[index]?.label ||
+                      `Menu Panel ${index + 1}`}
                   </div>
 
                   <h3 className="text-2xl md:text-4xl font-semibold tracking-tight">
-                    Emerald Table Presentation {index + 1}
+                    {emeraldMenuContent[index]?.title ||
+                      `Emerald Table Presentation ${index + 1}`}
                   </h3>
 
                   <p className="text-black/65 leading-relaxed">
-                    An elevated dining showcase designed with a refined visual
-                    identity, ideal for premium events, wedding functions, and
-                    elegant gatherings hosted at Jade Green Hotel.
+                    {emeraldMenuContent[index]?.desc ||
+                      "An elevated dining showcase designed with a refined visual identity, ideal for premium events, wedding functions, and elegant gatherings hosted at Jade Green Hotel."}
                   </p>
 
                   <button

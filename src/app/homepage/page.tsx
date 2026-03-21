@@ -17,7 +17,7 @@ const packages = [
     title: "Araliya Bar",
     desc: "Premium spirits & calm ambiance",
     image: "/assets/home/0010.jpg",
-    link: "/",
+    link: "/bar",
   },
   {
     title: "Emerald Table",
@@ -38,7 +38,7 @@ const packages1 = [
     title: "Prestige Event Space",
     desc: "A distinguished space for productive gatherings.",
     image: "/assets/home/007.jpg",
-    link: "/",
+    link: "/corporate",
   },
 ];
 function Counter({ end }: { end: number }) {
