@@ -39,14 +39,14 @@ export default function Navbar() {
                 alt="Logo"
                 width={150}
                 height={100}
-                className="w-28 md:w-32 h-auto"
+                className="w-28 h-auto"
               />
             </Link>
           </div>
 
           {/* Desktop Nav Links */}
-          <div className="hidden md:flex flex-row gap-12 items-center justify-center">
-            <div className="flex gap-10">
+          <div className="hidden md:flex flex-row gap-8 items-center justify-center">
+            <div className="flex gap-6">
               {navlinks.map((item) => (
                 <Link
                   key={item.id}

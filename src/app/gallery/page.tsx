@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Container from "@/components/common/container";
+import BeSearchForm from "@/components/be-forms/BeSearchForm";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
@@ -59,6 +60,10 @@ export default function GalleryPage() {
             Explore moments captured from our weddings, events, and functions.
           </p>
         </motion.div>
+
+        <div className="py-10">
+          <BeSearchForm />
+        </div>
 
         {/* Folder View */}
         {!selectedFolder && (

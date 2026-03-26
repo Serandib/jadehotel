@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "@/components/common/container";
+import BeSearchForm from "@/components/be-forms/BeSearchForm";
 import { motion } from "framer-motion";
 import { Briefcase, Users, Sparkles } from "lucide-react";
 
@@ -33,7 +34,7 @@ export default function CareersPage() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="py-32 text-center"
+            className="py-32 text-center pb-10"
           >
             <div className="inline-flex items-center gap-2 rounded-full bg-green-50 px-4 py-1 text-green-700 text-sm font-medium mb-6">
               <Sparkles size={16} />
@@ -49,6 +50,10 @@ export default function CareersPage() {
               meaningful experiences, and personal growth.
             </p>
           </motion.div>
+
+          <div className="py-10">
+            <BeSearchForm />
+          </div>
         </Container>
       </section>
 

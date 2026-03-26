@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "@/components/common/container";
+import BeSearchForm from "@/components/be-forms/BeSearchForm";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Script from "next/script";
@@ -88,6 +89,10 @@ export default function Homepage() {
             experiences, and grand celebrations in a setting inspired by nature.
           </p>
         </motion.div>
+
+        <div className="py-10">
+          <BeSearchForm />
+        </div>
 
         {/* Cards */}
         <motion.div
@@ -188,82 +193,82 @@ export default function Homepage() {
 
         {/* booking rooms */}
         {/* Room Booking */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="mt-24"
-        >
-          <div className="relative rounded-3xl bg-white shadow-2xl border border-black/5 p-8 md:p-10">
-            {/* Title */}
-            <div className="text-center mb-10">
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Book Your Stay
-              </h2>
-              <p className="mt-3 text-black/60">
-                Find the perfect room for your next getaway
-              </p>
-            </div>
+        {/*<motion.div*/}
+        {/*  initial={{ opacity: 0, y: 40 }}*/}
+        {/*  whileInView={{ opacity: 1, y: 0 }}*/}
+        {/*  viewport={{ once: true }}*/}
+        {/*  transition={{ duration: 0.8 }}*/}
+        {/*  className="mt-24"*/}
+        {/*>*/}
+        {/*  <div className="relative rounded-3xl bg-white shadow-2xl border border-black/5 p-8 md:p-10">*/}
+        {/*    /!* Title *!/*/}
+        {/*    <div className="text-center mb-10">*/}
+        {/*      <h2 className="text-3xl md:text-4xl font-bold tracking-tight">*/}
+        {/*        Book Your Stay*/}
+        {/*      </h2>*/}
+        {/*      <p className="mt-3 text-black/60">*/}
+        {/*        Find the perfect room for your next getaway*/}
+        {/*      </p>*/}
+        {/*    </div>*/}
 
-            {/* Form */}
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-end">
-              {/* Check In */}
-              <div className="flex flex-col">
-                <label className="text-sm font-medium text-black/70 mb-2">
-                  Check In
-                </label>
-                <input
-                  type="date"
-                  className="h-12 rounded-xl border border-black/10 px-4 focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-              </div>
+        {/*    /!* Form *!/*/}
+        {/*    <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-end">*/}
+        {/*      /!* Check In *!/*/}
+        {/*      <div className="flex flex-col">*/}
+        {/*        <label className="text-sm font-medium text-black/70 mb-2">*/}
+        {/*          Check In*/}
+        {/*        </label>*/}
+        {/*        <input*/}
+        {/*          type="date"*/}
+        {/*          className="h-12 rounded-xl border border-black/10 px-4 focus:outline-none focus:ring-2 focus:ring-primary"*/}
+        {/*        />*/}
+        {/*      </div>*/}
 
-              {/* Check Out */}
-              <div className="flex flex-col">
-                <label className="text-sm font-medium text-black/70 mb-2">
-                  Check Out
-                </label>
-                <input
-                  type="date"
-                  className="h-12 rounded-xl border border-black/10 px-4 focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-              </div>
+        {/*      /!* Check Out *!/*/}
+        {/*      <div className="flex flex-col">*/}
+        {/*        <label className="text-sm font-medium text-black/70 mb-2">*/}
+        {/*          Check Out*/}
+        {/*        </label>*/}
+        {/*        <input*/}
+        {/*          type="date"*/}
+        {/*          className="h-12 rounded-xl border border-black/10 px-4 focus:outline-none focus:ring-2 focus:ring-primary"*/}
+        {/*        />*/}
+        {/*      </div>*/}
 
-              {/* Guests */}
-              <div className="flex flex-col">
-                <label className="text-sm font-medium text-black/70 mb-2">
-                  Guests
-                </label>
-                <select className="h-12 rounded-xl border border-black/10 px-4 focus:outline-none focus:ring-2 focus:ring-primary">
-                  <option>1 Guest</option>
-                  <option>2 Guests</option>
-                  <option>3 Guests</option>
-                  <option>4 Guests</option>
-                  <option>5+ Guests</option>
-                </select>
-              </div>
+        {/*      /!* Guests *!/*/}
+        {/*      <div className="flex flex-col">*/}
+        {/*        <label className="text-sm font-medium text-black/70 mb-2">*/}
+        {/*          Guests*/}
+        {/*        </label>*/}
+        {/*        <select className="h-12 rounded-xl border border-black/10 px-4 focus:outline-none focus:ring-2 focus:ring-primary">*/}
+        {/*          <option>1 Guest</option>*/}
+        {/*          <option>2 Guests</option>*/}
+        {/*          <option>3 Guests</option>*/}
+        {/*          <option>4 Guests</option>*/}
+        {/*          <option>5+ Guests</option>*/}
+        {/*        </select>*/}
+        {/*      </div>*/}
 
-              {/* Room Type */}
-              <div className="flex flex-col">
-                <label className="text-sm font-medium text-black/70 mb-2">
-                  Room Type
-                </label>
-                <select className="h-12 rounded-xl border border-black/10 px-4 focus:outline-none focus:ring-2 focus:ring-primary">
-                  <option>Any</option>
-                  <option>Deluxe</option>
-                  <option>Suite</option>
-                  <option>Family</option>
-                </select>
-              </div>
+        {/*      /!* Room Type *!/*/}
+        {/*      <div className="flex flex-col">*/}
+        {/*        <label className="text-sm font-medium text-black/70 mb-2">*/}
+        {/*          Room Type*/}
+        {/*        </label>*/}
+        {/*        <select className="h-12 rounded-xl border border-black/10 px-4 focus:outline-none focus:ring-2 focus:ring-primary">*/}
+        {/*          <option>Any</option>*/}
+        {/*          <option>Deluxe</option>*/}
+        {/*          <option>Suite</option>*/}
+        {/*          <option>Family</option>*/}
+        {/*        </select>*/}
+        {/*      </div>*/}
 
-              {/* CTA */}
-              <button className="h-12 rounded-xl bg-primary text-white font-semibold hover:scale-[1.03] transition-transform">
-                Find Rooms
-              </button>
-            </div>
-          </div>
-        </motion.div>
+        {/*      /!* CTA *!/*/}
+        {/*      <button className="h-12 rounded-xl bg-primary text-white font-semibold hover:scale-[1.03] transition-transform">*/}
+        {/*        Find Rooms*/}
+        {/*      </button>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</motion.div>*/}
         {/* why choose us */}
         {/* Why Choose Us */}
         <motion.section

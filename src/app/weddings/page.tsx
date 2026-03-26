@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "@/components/common/container";
+import BeSearchForm from "@/components/be-forms/BeSearchForm";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
@@ -302,7 +303,7 @@ export default function Weddings() {
             initial={{ opacity: 0, y: 36 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative z-10 py-24 md:py-32 text-center"
+            className="relative z-10 py-32 text-center pb-10"
           >
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-6">
               <Heart size={16} />
@@ -320,6 +321,10 @@ export default function Weddings() {
               your special day.
             </p>
           </motion.div>
+
+          <div className="py-10">
+            <BeSearchForm />
+          </div>
         </Container>
       </section>
 

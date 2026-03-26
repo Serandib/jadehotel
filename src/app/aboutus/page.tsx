@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "@/components/common/container";
+import BeSearchForm from "@/components/be-forms/BeSearchForm";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Users, Heart, Globe } from "lucide-react";
@@ -15,7 +16,7 @@ export default function AboutUSPage() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="py-32 text-center relative z-10"
+            className="py-32 text-center relative z-10 pb-10"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               About <span className="text-primary">Jade Green</span>
@@ -27,6 +28,10 @@ export default function AboutUSPage() {
               experiences.
             </p>
           </motion.div>
+
+          <div className="py-10">
+            <BeSearchForm />
+          </div>
 
           {/* Decorative gradient */}
           <motion.div

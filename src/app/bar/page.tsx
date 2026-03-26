@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "@/components/common/container";
+import BeSearchForm from "@/components/be-forms/BeSearchForm";
 import { motion } from "framer-motion";
 import { Martini, Sparkles, Clock3 } from "lucide-react";
 
@@ -19,7 +20,7 @@ export default function AraliyaBarPage() {
             initial={{ opacity: 0, y: 36 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative z-10 py-24 md:py-32 text-center max-w-4xl mx-auto"
+            className="relative z-10 py-32 text-center max-w-4xl mx-auto pb-10"
           >
             <div className="inline-flex items-center gap-2 rounded-full border border-amber-200 bg-white/80 px-4 py-2 text-sm font-medium text-amber-700 shadow-sm backdrop-blur mb-6">
               <Sparkles size={16} />
@@ -40,6 +41,10 @@ export default function AraliyaBarPage() {
               and memorable moments.
             </p>
           </motion.div>
+
+          <div className="py-10">
+            <BeSearchForm />
+          </div>
         </Container>
       </section>
 

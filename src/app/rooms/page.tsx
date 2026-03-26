@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "@/components/common/container";
+import BeSearchForm from "@/components/be-forms/BeSearchForm";
 import { Users, Maximize2, Sparkles } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -65,7 +66,7 @@ export default function RoomsPage() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="py-28 text-center"
+            className="py-28 text-center pb-10"
           >
             <div className="inline-flex items-center gap-2 rounded-full bg-green-50 px-4 py-1 text-green-700 text-sm font-medium mb-6 animate-pulse">
               <Sparkles size={16} />
@@ -102,6 +103,10 @@ export default function RoomsPage() {
               seamlessly — crafted for unforgettable experiences in Hambantota.
             </motion.p>
           </motion.div>
+
+          <div className="py-10">
+            <BeSearchForm />
+          </div>
 
           {/* Decorative animated gradients */}
           <motion.div

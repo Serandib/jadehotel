@@ -21,11 +21,15 @@ const navlinks: INavLinks[] = [
     name: "Gallery",
     link: "/gallery",
   },
-
   {
     id: 5,
     name: "About Us",
     link: "/aboutus",
+  },
+  {
+    id: 6,
+    name: "Booking",
+    link: "/booking",
   },
   // {
   //   id: 6,
