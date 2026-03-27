@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "@/components/common/container";
+import BeSearchForm from "@/components/be-forms/BeSearchForm";
 import { motion } from "framer-motion";
 import {
   Phone,
@@ -19,7 +20,7 @@ export default function Contactus() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="pt-32 pb-20 text-center max-w-3xl mx-auto"
+          className="pt-32 pb-10 text-center max-w-3xl mx-auto"
         >
           <h1 className="text-4xl md:text-7xl font-bold tracking-tight text-primary">
             Contact Us
@@ -29,6 +30,10 @@ export default function Contactus() {
             or assistance. We’re always happy to help.
           </p>
         </motion.div>
+
+        <div className="py-10">
+          <BeSearchForm />
+        </div>
 
         {/* Main Content */}
         <div className="pb-32 grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">

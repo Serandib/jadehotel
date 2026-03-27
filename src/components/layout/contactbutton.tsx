@@ -3,6 +3,7 @@ import Link from "next/link";
 import Container from "../common/container";
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
+import {usePathname} from "next/navigation";
 type ContactButtonProps = {
   floating?: boolean;
 };
@@ -30,6 +31,10 @@ export default function ContactButton({
       </Link>
     </motion.div>
   );
+
+  const pathname = usePathname();
+
+  if (pathname == "/booking") return null;
 
   if (floating) return button;
 

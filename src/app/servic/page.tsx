@@ -1,6 +1,7 @@
 "use client";
 
 import Container from "@/components/common/container";
+import BeSearchForm from "@/components/be-forms/BeSearchForm";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 
@@ -33,15 +34,19 @@ export default function ServicePage() {
           </p>
 
           {/* CTAs */}
-          <div className="mt-12 flex flex-wrap gap-6">
+          {/*<div className="mt-12 flex flex-wrap gap-6">
             <button
               className="px-8 py-4 rounded-xl bg-primary text-white font-semibold text-lg hover:scale-105 transition-transform"
               onClick={() => router.push(`/rooms`)}
             >
               Book Your Stay
             </button>
-          </div>
+          </div>*/}
         </motion.div>
+
+        <div className="py-10">
+          <BeSearchForm />
+        </div>
 
         <motion.section
           initial={{ opacity: 0, y: 40 }}
@@ -191,7 +196,7 @@ export default function ServicePage() {
               service in the heart of Hambantota.
             </p>
 
-            <button className="mt-10 px-8 py-4 rounded-xl bg-white text-primary font-semibold hover:scale-105 transition-transform" onClick={() => router.push(`/rooms`)}>
+            <button className="mt-10 px-8 py-4 rounded-xl bg-white text-primary font-semibold hover:scale-105 transition-transform" onClick={() => router.push(`/booking`)}>
               Book Your Stay
             </button>
           </div>

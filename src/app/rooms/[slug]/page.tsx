@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Container from "@/components/common/container";
+import BeSearchForm from "@/components/be-forms/BeSearchForm";
+import Link from "next/link";
 
 const rooms = [
   {
@@ -15,6 +17,7 @@ const rooms = [
     image: "/assets/rooms/092.jpg",
     amenities: ["Tea/Coffee Making Facility", "Split Type Air-Conditioning", "Safe Deposit Box", "Hot/Cold Water", "IDD Facility", "Writing Desk", "TV"],
     discount: "10%",
+    beRoomType: "",
   },
   {
     slug: "deluxe-triple",
@@ -30,6 +33,7 @@ const rooms = [
     tag: "Best Value",
     discount: "10%",
     amenities: ["Tea/Coffee Making Facility", "Split Type Air-Conditioning", "Safe Deposit Box", "Hot/Cold Water", "IDD Facility", "Writing Desk", "TV" ],
+    beRoomType: "5040936",
   },
   {
     slug: "deluxe-family",
@@ -45,6 +49,7 @@ const rooms = [
     tag: "Family Choice",
     discount: "10%",
     amenities: ["Tea/Coffee Making Facility", "Split Type Air-Conditioning", "Safe Deposit Box", "Hot/Cold Water", "IDD Facility", "Writing Desk", "TV" ],
+    beRoomType: "5040937",
   },
   {
     slug: "deluxe-double",
@@ -60,6 +65,7 @@ const rooms = [
     tag: "Luxury",
     discount: "10%",
     amenities: ["Tea/Coffee Making Facility", "Split Type Air-Conditioning", "Safe Deposit Box", "Hot/Cold Water", "IDD Facility", "Writing Desk", "TV"],
+    beRoomType: "5040938",
   },
   // add others here
 ];
@@ -107,6 +113,10 @@ export default async function RoomDetailsPage({
             </h1>
             <p className="mt-4 text-lg text-white/90">{room.desc}</p>
           </div>
+        </div>
+
+        <div>
+          <BeSearchForm />
         </div>
 
         {/* DETAILS GRID */}
@@ -193,9 +203,12 @@ export default async function RoomDetailsPage({
               </span>
             </p>
 
-            <button className="w-full rounded-full bg-green-700 py-4 text-white font-semibold hover:bg-primary transition mb-4">
+            {/*<button className="w-full rounded-full bg-green-700 py-4 text-white font-semibold hover:bg-primary transition mb-4">*/}
+            {/*  Book This Room*/}
+            {/*</button>*/}
+            <Link className="w-full rounded-full bg-green-700 py-4 text-white font-semibold hover:bg-primary transition mb-4 block text-center" href={`/booking?room-type=${room.beRoomType}`}>
               Book This Room
-            </button>
+            </Link>
             <div className="text-center">
               {room.discount && (
                 <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-600 to-red-400 px-4 py-1.5 text-xs font-semibold text-white shadow-lg w-fit">

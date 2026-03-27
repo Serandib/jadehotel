@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.jadegreen.lk"),
   title: {
-    default: "Jade Green Hotel Hambantota | Hotels in Hambantota",
+    default: "Jade Green Hotel Hambantota - Official Website | Hotels in Hambantota",
     template: "%s | Jade Green Hotel Hambantota",
   },
   description:
@@ -76,7 +76,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
+      <head>
+        <meta name="google-site-verification" content="h6bFhtej5Y0lwe7xRuC5zHBZsRMj5dKMnbhnbgKGV7s" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
