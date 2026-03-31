@@ -11,7 +11,6 @@ import { SiTripadvisor } from "react-icons/si";
 import { usePathname } from "next/navigation";
 
 export default function Footer() {
-  const pathname = usePathname();
 
   return (
     <footer
@@ -34,8 +33,7 @@ export default function Footer() {
                 height={180}
               />
             </div>
-            {pathname !== "/booking" &&
-            <div className="flex flex-row absolute mt-32 gap-3 hover:cursor-pointer">
+            <div className="flex flex-row absolute mt-32 gap-3 hover:cursor-pointer footer-socials">
               <a
                 href="https://www.instagram.com/jade_green_hambantota?igsh=NjRseW54bmxmNmI="
                 target="_blank"
@@ -74,7 +72,7 @@ export default function Footer() {
               >
                 <SiTripadvisor size={20} />
               </a>
-            </div>}
+            </div>
           </div>
           <div className="flex md:flex-row flex-col md:gap-60 gap-5 lg:mt-16 hover:cursor-pointer font-medium mt-10">
             <div className="flex flex-col md:text-end text-center ">

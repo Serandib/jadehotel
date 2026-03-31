@@ -16,7 +16,7 @@ export default function ContactButton({
       initial={{ scale: 0.8, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.4 }}
-      className="fixed bottom-6 right-6 z-50 block "
+      className="fixed bottom-6 right-6 z-50 block wa-widget"
     >
       <Link href="https://wa.me/94715486103">
         <motion.button
@@ -31,10 +31,6 @@ export default function ContactButton({
       </Link>
     </motion.div>
   );
-
-  const pathname = usePathname();
-
-  if (pathname == "/booking") return null;
 
   if (floating) return button;
 

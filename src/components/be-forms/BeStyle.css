@@ -28,3 +28,8 @@
 #tl-booking-cart {
     z-index: 1 !important;
 }
+
+body:has(#be-booking-form) .footer-socials,
+body:has(#be-booking-form) .wa-widget {
+    display: none !important;
+}
