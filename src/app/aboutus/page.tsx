@@ -22,7 +22,7 @@ export default function AboutUSPage() {
               About <span className="text-primary">Jade Green</span>
             </h1>
             <p className="text-gray-700 max-w-2xl mx-auto text-lg leading-relaxed">
-              Welcome to Jade Green Boutique Hotel – where luxury meets
+              Welcome to Jade Green Hotel – where luxury meets
               tranquility. Nestled in the heart of Hambantota, our hotel blends
               modern comforts with natural serenity for unforgettable
               experiences.
@@ -118,7 +118,7 @@ export default function AboutUSPage() {
               </h2>
 
               <p className="text-gray-700 mb-5 leading-relaxed">
-                Our mission at Jade Green Boutique Hotel is to create meaningful
+                Our mission at Jade Green Hotel is to create meaningful
                 and memorable experiences by offering exceptional hospitality,
                 refined comfort, and personalized service in a serene natural
                 setting.
@@ -376,7 +376,7 @@ export default function AboutUSPage() {
               <p className="text-white/90 leading-relaxed">
                 Our experienced managers, chefs, and hospitality professionals
                 work together to ensure every guest feels welcomed, relaxed, and
-                truly valued at Jade Green Boutique Hotel.
+                truly valued at Jade Green Hotel.
               </p>
             </div>
           </motion.div>
@@ -397,7 +397,7 @@ export default function AboutUSPage() {
             </h2>
             <p className="max-w-2xl mx-auto mb-8 text-white/90">
               Join our passionate team and grow your career in hospitality with
-              Jade Green Boutique Hotel.
+              Jade Green Hotel.
             </p>
 
             <a

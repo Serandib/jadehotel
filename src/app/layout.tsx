@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | Jade Green Hotel Hambantota",
   },
   description:
-    "Jade Green Hotel Hambantota offers comfortable rooms, a restaurant, wedding hall, event venue, and boutique hospitality in Hambantota, Sri Lanka.",
+    "Jade Green Hotel Hambantota offers comfortable rooms, a restaurant, wedding hall, event venue, and hospitality in Hambantota, Sri Lanka.",
   keywords: [
     "Jade Green Hotel",
     "Jade Green Hotel Hambantota",
@@ -31,7 +31,6 @@ export const metadata: Metadata = {
     "Hotels in Hambantota",
     "Luxury hotel Hambantota",
     "Best hotel in Hambantota",
-    "Boutique hotel Hambantota",
     "Rooms in Hambantota",
     "Accommodation in Hambantota",
     "Wedding hall Hambantota",

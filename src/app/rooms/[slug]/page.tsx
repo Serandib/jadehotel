@@ -106,7 +106,7 @@ export default async function RoomDetailsPage({
           {/* Title */}
           <div className="absolute bottom-10 left-10 text-white max-w-xl">
             <span className="inline-block mb-4 rounded-full bg-white/20 px-4 py-1 text-sm backdrop-blur">
-              Jade Green Boutique Hotel
+              Jade Green Hotel
             </span>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               {room.title}

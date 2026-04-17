@@ -557,7 +557,7 @@ export default function Homepage() {
                 Find Us
               </h2>
               <p className="mt-4 text-lg text-black/60">
-                Visit Jade Green Boutique Hotel in Hambantota, Sri Lanka
+                Visit Jade Green Hotel in Hambantota, Sri Lanka
               </p>
             </div>
 

@@ -68,10 +68,7 @@ export default function RoomsPage() {
             transition={{ duration: 1 }}
             className="py-28 text-center pb-10"
           >
-            <div className="inline-flex items-center gap-2 rounded-full bg-green-50 px-4 py-1 text-green-700 text-sm font-medium mb-6 animate-pulse">
-              <Sparkles size={16} />
-              Jade Green Boutique Hotel
-            </div>
+            
 
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 relative overflow-hidden">
               <motion.span

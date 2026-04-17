@@ -61,7 +61,7 @@ export default function ServicePage() {
             </h2>
 
             <p className="text-black/70 leading-relaxed mb-6">
-              Jade Green is a charming boutique hotel offering refined comfort
+              Jade Green is a charming hotel offering refined comfort
               and personalized hospitality at exceptional value. Conveniently
               located in the heart of Hambantota, the hotel is easily accessible
               via the Colombo to Mattala Expressway.

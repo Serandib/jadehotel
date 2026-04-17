@@ -3,13 +3,7 @@
 import Container from "@/components/common/container";
 import BeSearchForm from "@/components/be-forms/BeSearchForm";
 import { motion } from "framer-motion";
-import {
-  Phone,
-  Mail,
-  MapPin,
-  Clock,
-  Send,
-} from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 
 export default function Contactus() {
   return (
@@ -26,8 +20,8 @@ export default function Contactus() {
             Contact Us
           </h1>
           <p className="mt-5 text-lg text-black leading-relaxed">
-            Reach out to Jade Green Hambantota for bookings, inquiries,
-            or assistance. We’re always happy to help.
+            Reach out to Jade Green Hambantota for bookings, inquiries, or
+            assistance. We’re always happy to help.
           </p>
         </motion.div>
 
@@ -83,9 +77,7 @@ export default function Contactus() {
 
                   <div>
                     <p className="text-sm text-black/50">{item.title}</p>
-                    <p className="font-semibold text-black/80">
-                      {item.value}
-                    </p>
+                    <p className="font-semibold text-black/80">{item.value}</p>
                   </div>
                 </div>
               ))}
@@ -117,17 +109,35 @@ export default function Contactus() {
             transition={{ duration: 0.8 }}
             className="bg-white rounded-3xl shadow-xl border border-black/5 p-10"
           >
-            <h2 className="text-2xl font-semibold mb-8">
-              Send Us a Message
-            </h2>
+            <h2 className="text-2xl font-semibold mb-8">Send Us a Message</h2>
 
-            <form className="space-y-6">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              className="space-y-6"
+            >
+              {/* Web3Forms Access Key */}
+              <input
+                type="hidden"
+                name="access_key"
+                value="a8f84904-c848-4e29-b99b-6f86b2b8205e"
+              />
+
+              {/* Optional Subject */}
+              <input
+                type="hidden"
+                name="subject"
+                value="New Contact Message - Jade Green Hotel"
+              />
+
               <div>
                 <label className="block text-sm font-medium text-black/70 mb-2">
                   Name
                 </label>
                 <input
                   type="text"
+                  name="name"
+                  required
                   placeholder="Your full name"
                   className="w-full h-12 rounded-xl border border-black/10 px-4 focus:outline-none focus:ring-2 focus:ring-primary"
                 />
@@ -139,7 +149,9 @@ export default function Contactus() {
                 </label>
                 <input
                   type="email"
-                  placeholder="jadegreenhotel@gmail.com "
+                  name="email"
+                  required
+                  placeholder="jadegreenhotel@gmail.com"
                   className="w-full h-12 rounded-xl border border-black/10 px-4 focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
@@ -149,7 +161,9 @@ export default function Contactus() {
                   Message
                 </label>
                 <textarea
+                  name="message"
                   rows={5}
+                  required
                   placeholder="How can we help you?"
                   className="w-full rounded-xl border border-black/10 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary resize-none"
                 />
